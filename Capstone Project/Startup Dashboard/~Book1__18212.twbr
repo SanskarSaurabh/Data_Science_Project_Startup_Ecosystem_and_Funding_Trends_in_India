@@ -1,0 +1,3037 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20252.25.0514.2217                               -->
+<workbook original-version='18.1' source-build='2025.2.0 (20252.25.0514.2217)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MapboxVectorStylesAndLayers />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='startup_funding' inline='true' name='federated.1q0hamp12clks719newkh0xnagnb' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='startup_funding' name='textscan.1ln0xdx0n1rytx15rfols03ald4l'>
+            <connection class='textscan' directory='E:/Reading/Python/KRMU Data Science/Capstone Project' filename='startup_funding.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1ln0xdx0n1rytx15rfols03ald4l' name='startup_funding.csv' table='[startup_funding#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='Sr No' ordinal='0' />
+            <column datatype='date' name='Date dd/mm/yyyy' ordinal='1' />
+            <column datatype='string' name='Startup Name' ordinal='2' />
+            <column datatype='string' name='Industry Vertical' ordinal='3' />
+            <column datatype='string' name='SubVertical' ordinal='4' />
+            <column datatype='string' name='City  Location' ordinal='5' />
+            <column datatype='string' name='Investors Name' ordinal='6' />
+            <column datatype='string' name='InvestmentnType' ordinal='7' />
+            <column datatype='string' name='Amount in USD' ordinal='8' />
+            <column datatype='string' name='Remarks' ordinal='9' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[startup_funding.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sr No</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Sr No]</local-name>
+            <parent-name>[startup_funding.csv]</parent-name>
+            <remote-alias>Sr No</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[startup_funding.csv_AF0AC2FAEA7A41C197C34C120FBD4822]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date dd/mm/yyyy</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Date dd/mm/yyyy]</local-name>
+            <parent-name>[startup_funding.csv]</parent-name>
+            <remote-alias>Date dd/mm/yyyy</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[startup_funding.csv_AF0AC2FAEA7A41C197C34C120FBD4822]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Startup Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Startup Name]</local-name>
+            <parent-name>[startup_funding.csv]</parent-name>
+            <remote-alias>Startup Name</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[startup_funding.csv_AF0AC2FAEA7A41C197C34C120FBD4822]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Industry Vertical</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Industry Vertical]</local-name>
+            <parent-name>[startup_funding.csv]</parent-name>
+            <remote-alias>Industry Vertical</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[startup_funding.csv_AF0AC2FAEA7A41C197C34C120FBD4822]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SubVertical</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[SubVertical]</local-name>
+            <parent-name>[startup_funding.csv]</parent-name>
+            <remote-alias>SubVertical</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[startup_funding.csv_AF0AC2FAEA7A41C197C34C120FBD4822]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>City  Location</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[City  Location]</local-name>
+            <parent-name>[startup_funding.csv]</parent-name>
+            <remote-alias>City  Location</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[startup_funding.csv_AF0AC2FAEA7A41C197C34C120FBD4822]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Investors Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Investors Name]</local-name>
+            <parent-name>[startup_funding.csv]</parent-name>
+            <remote-alias>Investors Name</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[startup_funding.csv_AF0AC2FAEA7A41C197C34C120FBD4822]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>InvestmentnType</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[InvestmentnType]</local-name>
+            <parent-name>[startup_funding.csv]</parent-name>
+            <remote-alias>InvestmentnType</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[startup_funding.csv_AF0AC2FAEA7A41C197C34C120FBD4822]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Amount in USD</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Amount in USD]</local-name>
+            <parent-name>[startup_funding.csv]</parent-name>
+            <remote-alias>Amount in USD</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[startup_funding.csv_AF0AC2FAEA7A41C197C34C120FBD4822]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Remarks</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Remarks]</local-name>
+            <parent-name>[startup_funding.csv]</parent-name>
+            <remote-alias>Remarks</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[startup_funding.csv_AF0AC2FAEA7A41C197C34C120FBD4822]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Funding Amount' datatype='string' datatype-customized='true' name='[Amount in USD]' role='dimension' type='nominal' />
+      <column caption='Number Of Investors' datatype='integer' name='[Calculation_740560701779005440]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='LEN([Investors Name]) - LEN(REGEXP_REPLACE([Investors Name], &quot;,&quot;, &quot;&quot;))+1' />
+      </column>
+      <column caption='Funding Amount in Number' datatype='real' name='[Calculation_740560701791731713]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF ISNULL([Amount in USD]) OR LOWER([Amount in USD]) = &quot;undisclosed&quot; OR LOWER([Amount in USD]) = &quot;unknown&quot; THEN&#13;&#10;    NULL&#13;&#10;ELSE&#13;&#10;    FLOAT(REPLACE(REPLACE([Amount in USD], &quot;,&quot;, &quot;&quot;), &quot; &quot;, &quot;&quot;))&#13;&#10;END' />
+      </column>
+      <column caption='City' datatype='string' name='[City  Location]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column caption='Date ' datatype='date' name='[Date dd/mm/yyyy]' role='dimension' type='ordinal' />
+      <column datatype='string' name='[Industry Vertical]' role='dimension' type='nominal' />
+      <column caption='Investment Type' datatype='string' name='[InvestmentnType]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Investors Name]' role='dimension' type='nominal' />
+      <column caption='Sub Vertical' datatype='string' name='[SubVertical]' role='dimension' type='nominal' />
+      <column caption='startup_funding.csv' datatype='table' name='[__tableau_internal_object_id__].[startup_funding.csv_AF0AC2FAEA7A41C197C34C120FBD4822]' role='measure' type='quantitative' />
+      <column-instance column='[Amount in USD]' derivation='None' name='[none:Amount in USD:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Industry Vertical]' derivation='None' name='[none:Industry Vertical:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Investors Name]' derivation='None' name='[none:Investors Name:nk]' pivot='key' type='nominal' />
+      <group hidden='true' name='[Exclusions (Funding Amount,Industry Vertical,Investors Name)]' name-style='unqualified' user:auto-column='exclude'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:Amount in USD:nk]' />
+          <groupfilter function='level-members' level='[none:Industry Vertical:nk]' />
+          <groupfilter function='level-members' level='[none:Investors Name:nk]' />
+        </groupfilter>
+      </group>
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/ASUS/AppData/Local/Temp/TableauTemp/#TableauTemp_0y4salj1ai3i9c1dxijon007yta1.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='08/02/2025 06:50:29 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Sr No</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Sr No]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Sr No</remote-alias>
+              <ordinal>0</ordinal>
+              <family>startup_funding.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3044</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[startup_funding.csv_AF0AC2FAEA7A41C197C34C120FBD4822]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Date dd/mm/yyyy</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Date dd/mm/yyyy]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Date dd/mm/yyyy</remote-alias>
+              <ordinal>1</ordinal>
+              <family>startup_funding.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>929</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[startup_funding.csv_AF0AC2FAEA7A41C197C34C120FBD4822]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Startup Name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Startup Name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Startup Name</remote-alias>
+              <ordinal>2</ordinal>
+              <family>startup_funding.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1709</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[startup_funding.csv_AF0AC2FAEA7A41C197C34C120FBD4822]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Industry Vertical</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Industry Vertical]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Industry Vertical</remote-alias>
+              <ordinal>3</ordinal>
+              <family>startup_funding.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>573</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[startup_funding.csv_AF0AC2FAEA7A41C197C34C120FBD4822]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>SubVertical</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[SubVertical]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>SubVertical</remote-alias>
+              <ordinal>4</ordinal>
+              <family>startup_funding.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1438</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[startup_funding.csv_AF0AC2FAEA7A41C197C34C120FBD4822]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>City  Location</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[City  Location]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>City  Location</remote-alias>
+              <ordinal>5</ordinal>
+              <family>startup_funding.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>97</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[startup_funding.csv_AF0AC2FAEA7A41C197C34C120FBD4822]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Investors Name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Investors Name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Investors Name</remote-alias>
+              <ordinal>6</ordinal>
+              <family>startup_funding.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1592</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[startup_funding.csv_AF0AC2FAEA7A41C197C34C120FBD4822]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>InvestmentnType</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[InvestmentnType]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>InvestmentnType</remote-alias>
+              <ordinal>7</ordinal>
+              <family>startup_funding.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>49</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[startup_funding.csv_AF0AC2FAEA7A41C197C34C120FBD4822]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Amount in USD</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Amount in USD]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Amount in USD</remote-alias>
+              <ordinal>8</ordinal>
+              <family>startup_funding.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>340</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[startup_funding.csv_AF0AC2FAEA7A41C197C34C120FBD4822]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Remarks</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Remarks]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Remarks</remote-alias>
+              <ordinal>9</ordinal>
+              <family>startup_funding.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>71</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[startup_funding.csv_AF0AC2FAEA7A41C197C34C120FBD4822]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Amount in USD:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;1,08,000&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;1,35,00,000&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;1,52,00,000&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;1,75,00,000&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;12,00,000&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;16,00,000&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;2,10,000&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;2,43,000&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;2,95,00,000&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;22,50,00,000&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;29,50,000&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;3,20,000&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;3,80,80,000&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;37,00,000&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;4,40,00,000&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;46,140&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;5,10,00,000&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;6,20,000&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;60,00,000&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;7,50,000&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;70,000&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;89,50,000&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;9,00,00,000&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;nan&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;\\\\xc2\\\\xa05,000,000&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;1,00,00,00,000&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;1,23,00,000&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;1,48,00,000&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;1,65,00,000&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;1,91,000&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;10,50,000&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;14,50,00,000&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;19,50,000&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;2,30,000&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;2,77,99,000&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;26,00,000&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;3,10,000&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;3,62,30,000&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;34,50,000&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;4,10,000&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;4,70,00,000&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;43,00,000&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;5,70,00,000&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;54,00,000&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;67,00,000&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;7,10,00,000&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;8,20,00,000&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;80,000&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;\\\\xc2\\\\xa020,000,000&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;1,02,00,000&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;1,27,50,000&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;1,49,000&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;1,68,000&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;11,50,00,000&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;15,00,000&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;2,00,000&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;2,35,00,000&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;2,85,000&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;21,00,000&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;27,50,000&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;3,13,00,000&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;3,70,000&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;36,00,000&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;4,30,200&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;4,90,000&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;45,000&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;5,95,000&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;58,00,000&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;68,000&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;7,37,00,000&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;8,68,600&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;85,00,000&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;1,14,811&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;1,40,00,000&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;1,56,00,000&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;1,82,00,000&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;13,00,000&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;17,50,00,000&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;2,20,00,000&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;2,50,00,000&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;23,00,000&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;3,00,00,000&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;3,30,000&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;3,85,000&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;30,768&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;39,000&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;4,45,000&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;48,89,975.54&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;5,20,000&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;6,40,000&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;62,40,000&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;7,72,500&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;75,00,000&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;9,63,000&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;91,00,000&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;1,10,00,000&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;1,35,000&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;1,54,00,000&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;1,75,000&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;12,40,000&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;16,000&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;2,15,00,000&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;2,45,000&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;2,95,000&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;22,50,000&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;3,24,000&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;3,80,000&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;30,00,00,000&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;37,50,000&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;4,40,000&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;47,00,000&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;5,15,000&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;6,25,000&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;61,00,000&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;7,68,000&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;72,00,000&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;89,000&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;9,00,000&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;undisclosed&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;\\\\xc2\\\\xa0600,000&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;1,04,000&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;1,30,00,000&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;1,50,00,000&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;1,70,00,000&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;11,50,000&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;15,30,000&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;2,05,000&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;2,35,000&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;2,90,00,000&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;21,50,000&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;27,000&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;3,15,000&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;3,75,00,000&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;36,50,000&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;4,30,665&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;4,97,00,000&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;46,00,000&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;58,50,00,000&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;6,00,00,000&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;69,00,000&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;7,40,000&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;8,70,00,000&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;86,00,000&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;1,22,00,000&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;1,47,50,000&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;1,61,000&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;1,90,00,000&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;10,40,000&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;14,00,00,000&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;19,00,000&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;2,27,000&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;2,75,000&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;25,000&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;3,07,600&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;3,60,00,000&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;33,50,000&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;4,00,00,000&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;4,64,000&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;42,00,000&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;4200000&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;5,50,000&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;52,000&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;65,90,000&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;7,00,00,000&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;8,00,00,000&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;80,00,000&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;\\\\xc2\\\\xa010,000,000&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;1,00,00,000&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;1,23,000&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;1,48,000&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;1,65,000&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;1,95,00,000&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;10,70,000&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;14,50,000&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;2,32,000&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;2,78,000&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;20,00,00,000&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;27,00,00,000&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;3,11,000&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;3,66,000&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;35,00,000&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;4,20,00,000&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;4,70,000&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;44,00,000&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;5,70,000&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;55,00,000&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;68,00,00,000&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;7,22,000&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;8,25,000&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;81,000&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;1,20,00,000&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;1,45,000&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;1,60,00,000&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;1,87,000&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;10,00,00,000&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;13,70,00,000&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;18,00,000&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;2,25,00,000&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;2,70,00,000&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;25,00,00,000&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;3,06,000&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;3,50,000&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;3,95,000&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;33,00,00,000&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;4,55,000&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;41,00,000&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;5,40,000&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;51,50,000&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;6,75,000&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;63,90,000&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;7,85,000&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;77,000&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;96,00,000&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;\\\\xc2\\\\xa0685,000&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;1,06,000&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;1,30,000&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;1,50,000&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;1,72,00,000&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;11,000,00&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;15,72,00,000&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;2,09,000&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;2,40,00,000&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;2,90,000&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;22,00,00,000&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;28,00,000&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;3,19,605&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;3,75,000&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;36,70,000&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;4,36,000&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;46,50,000&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;5,00,00,000&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;58,50,000&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;6,00,000&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;7,45,000&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;70,00,00,000&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;8,72,000&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;88,00,000&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;1,15,00,000&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;1,40,000&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;1,56,000&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;1,83,58,860&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;13,10,000&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;17,50,000&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;2,20,000&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;2,50,000&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;23,10,00,000&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;3,00,000&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;3,36,000&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;3,87,00,000&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;31,00,000&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;4,48,000&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;40,00,00,000&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;5,30,000&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;50,00,00,000&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;6,50,000&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;62,50,000&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;7,76,000&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;75,000&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;9,70,000&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;92,00,000&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;1,15,000&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;1,42,70,000&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;1,57,00,000&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;1,85,00,000&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;13,50,00,000&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;17,90,000&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;2,23,608&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;2,60,00,000&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;24,00,000&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;3,03,000&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;3,40,00,000&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;3,90,00,00,000&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;32,00,000&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;4,50,00,000&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;40,00,000&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;5,35,000&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;50,00,000&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;6,60,00,000&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;63,00,000&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;7,80,000&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;76,00,000&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;9,71,000&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;94,000&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;1,20,000&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;1,46,80,000&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;1,60,000&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;1,88,40,000&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;10,00,000&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;13,000,00&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;18,000&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;2,25,000&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;2,70,000&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;25,00,000&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;3,000,00&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;3,07,000&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;3,54,600&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;33,00,000&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;4,60,000&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;41,50,000&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;5,50,00,000&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;52,00,000&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;6,92,000&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;65,00,000&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;7,90,000&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;78,00,000&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;97,00,000&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;\\\\xc2\\\\xa0N/A&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;1,22,50,000&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;1,47,000&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;1,62,000&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;1,90,000&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;10,45,00,000&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;14,00,000&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;19,30,000&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;2,30,00,000&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;2,77,00,000&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;26,00,00,000&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;3,10,00,000&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;3,60,000&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;34,00,000&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;4,00,000&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;4,66,000&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;42,50,000&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;5,60,00,000&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;53,00,000&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;66,00,000&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;7,00,000&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;8,00,000&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;80,48,394&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;1,10,000&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;1,38,995&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;1,55,00,000&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;1,80,00,000&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;12,50,00,000&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;16,600&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;2,15,000&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;2,46,000&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;2,97,000&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;22,60,00,000&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;3,25,000&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;3,82,000&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;30,00,000&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;37,000&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;4,41,000&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;48,00,000&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;5,18,000&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;6,30,00,000&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;62,00,000&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;7,70,00,000&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;73,000&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;9,35,089&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;90,00,000&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Undisclosed&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;1,07,50,000&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;1,34,00,000&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;1,51,09,500.00&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;1,74,11,265&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;12,00,00,000&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;15,80,000&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;2,10,00,000&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;2,40,000&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;2,93,000&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;22,00,000&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;28,30,00,000&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;3,20,00,000&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;3,76,000&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;36,90,000&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;4,37,000&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;46,000,00&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;5,00,000&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;6,20,00,000&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;60,00,00,000&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;7,50,00,000&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;70,00,000&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;8,90,000&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;89,00,000&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;N/A&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;\\\\xc2\\\\xa016,200,000&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;1,00,000&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;1,000,000,&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;1,25,00,000&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;1,48,434&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;1,66,00,000&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;11,00,00,000&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;14,342,000+&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;2,33,000&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;2,80,00,000&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;20,00,000&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;27,00,000&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;3,11,200&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;3,68,000&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;35,84,000&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;4,22,000&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;4,75,000&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;45,00,00,000&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;5,72,000&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;56,00,000&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;68,00,000&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;7,34,000&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;8,50,00,000&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;82,00,000&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;1,18,000&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;1,43,000&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;1,58,00,000&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;1,85,000&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;13,50,000&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;18,00,00,000&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;2,24,00,000&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;2,60,000&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;24,43,495&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;3,05,000&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;3,50,00,000&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;3,90,000&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;32,50,000&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;4,50,000&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;40,000&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;5,37,000&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;50,000&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;6,70,000&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;63,20,820&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;7,83,000&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;77,00,000&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;9,78,000&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;95,00,000&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;1,11,00,000&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;1,40,00,00,000&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;1,55,000&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;1,80,000&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;12,50,000&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;17,00,000&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;2,18,000&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;2,50,00,00,000&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;2,98,000&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;22,500&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;3,29,230&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;3,84,00,000&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;30,000&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;38,00,000&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;4,43,000&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;48,50,000&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;5,20,00,000&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;6,30,000&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;62,30,000&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;7,70,000&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;74,00,000&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;9,49,000&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;90,000&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;unknown&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;\\\\xc2\\\\xa019,350,000&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;1,01,00,000&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;1,25,000&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;1,49,00,000&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;1,66,000&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;11,00,000&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;15,00,00,000&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;2,00,00,000&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;2,34,000&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;2,80,000&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;20,000&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;27,39,034.68&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;3,12,000&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;3,70,00,000&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;35,91,375&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;4,25,000&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;4,86,000&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;45,00,000&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;5,80,000&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;57,50,000&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;59,00,000&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;68,30,000&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;7,35,000&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;8,50,000&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;82,50,000&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='startup_funding.csv' id='startup_funding.csv_AF0AC2FAEA7A41C197C34C120FBD4822'>
+            <properties context=''>
+              <relation connection='textscan.1ln0xdx0n1rytx15rfols03ald4l' name='startup_funding.csv' table='[startup_funding#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='Sr No' ordinal='0' />
+                  <column datatype='date' name='Date dd/mm/yyyy' ordinal='1' />
+                  <column datatype='string' name='Startup Name' ordinal='2' />
+                  <column datatype='string' name='Industry Vertical' ordinal='3' />
+                  <column datatype='string' name='SubVertical' ordinal='4' />
+                  <column datatype='string' name='City  Location' ordinal='5' />
+                  <column datatype='string' name='Investors Name' ordinal='6' />
+                  <column datatype='string' name='InvestmentnType' ordinal='7' />
+                  <column datatype='string' name='Amount in USD' ordinal='8' />
+                  <column datatype='string' name='Remarks' ordinal='9' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <shared-views>
+    <shared-view name='federated.1q0hamp12clks719newkh0xnagnb'>
+      <datasources>
+        <datasource caption='startup_funding' name='federated.1q0hamp12clks719newkh0xnagnb' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1q0hamp12clks719newkh0xnagnb'>
+        <column caption='City' datatype='string' name='[City  Location]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+        <column datatype='string' name='[Industry Vertical]' role='dimension' type='nominal' />
+        <column caption='Investment Type' datatype='string' name='[InvestmentnType]' role='dimension' type='nominal' />
+        <column-instance column='[City  Location]' derivation='None' name='[none:City  Location:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Industry Vertical]' derivation='None' name='[none:Industry Vertical:nk]' pivot='key' type='nominal' />
+        <column-instance column='[InvestmentnType]' derivation='None' name='[none:InvestmentnType:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <filter class='categorical' column='[federated.1q0hamp12clks719newkh0xnagnb].[none:City  Location:nk]'>
+        <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+          <groupfilter function='member' level='[none:City  Location:nk]' member='&quot;Agra&quot;' />
+          <groupfilter function='member' level='[none:City  Location:nk]' member='&quot;Ahemadabad&quot;' />
+          <groupfilter function='member' level='[none:City  Location:nk]' member='&quot;Ahemdabad&quot;' />
+          <groupfilter function='member' level='[none:City  Location:nk]' member='&quot;Ahmedabad&quot;' />
+          <groupfilter function='member' level='[none:City  Location:nk]' member='&quot;Amritsar&quot;' />
+          <groupfilter function='member' level='[none:City  Location:nk]' member='&quot;Andheri&quot;' />
+          <groupfilter function='member' level='[none:City  Location:nk]' member='&quot;Bangalore&quot;' />
+          <groupfilter function='member' level='[none:City  Location:nk]' member='&quot;Bangalore / Palo Alto&quot;' />
+          <groupfilter function='member' level='[none:City  Location:nk]' member='&quot;Bangalore / San Mateo&quot;' />
+          <groupfilter function='member' level='[none:City  Location:nk]' member='&quot;Bangalore / SFO&quot;' />
+          <groupfilter function='member' level='[none:City  Location:nk]' member='&quot;Bangalore / USA&quot;' />
+          <groupfilter function='member' level='[none:City  Location:nk]' member='&quot;Bangalore/ Bangkok&quot;' />
+          <groupfilter function='member' level='[none:City  Location:nk]' member='&quot;Belgaum&quot;' />
+          <groupfilter function='member' level='[none:City  Location:nk]' member='&quot;Bengaluru&quot;' />
+          <groupfilter function='member' level='[none:City  Location:nk]' member='&quot;Bengaluru and Gurugram&quot;' />
+          <groupfilter function='member' level='[none:City  Location:nk]' member='&quot;Bhopal&quot;' />
+          <groupfilter function='member' level='[none:City  Location:nk]' member='&quot;Bhubneswar&quot;' />
+          <groupfilter function='member' level='[none:City  Location:nk]' member='&quot;Goa/Hyderabad&quot;' />
+          <groupfilter function='member' level='[none:City  Location:nk]' member='&quot;Hyderabad/USA&quot;' />
+          <groupfilter function='member' level='[none:City  Location:nk]' member='&quot;India&quot;' />
+          <groupfilter function='member' level='[none:City  Location:nk]' member='&quot;India / US&quot;' />
+          <groupfilter function='member' level='[none:City  Location:nk]' member='&quot;India/Singapore&quot;' />
+          <groupfilter function='member' level='[none:City  Location:nk]' member='&quot;India/US&quot;' />
+          <groupfilter function='member' level='[none:City  Location:nk]' member='&quot;Indore&quot;' />
+          <groupfilter function='member' level='[none:City  Location:nk]' member='&quot;Jaipur&quot;' />
+          <groupfilter function='member' level='[none:City  Location:nk]' member='&quot;Jodhpur&quot;' />
+          <groupfilter function='member' level='[none:City  Location:nk]' member='&quot;Kanpur&quot;' />
+          <groupfilter function='member' level='[none:City  Location:nk]' member='&quot;Karnataka&quot;' />
+          <groupfilter function='member' level='[none:City  Location:nk]' member='&quot;Karur&quot;' />
+          <groupfilter function='member' level='[none:City  Location:nk]' member='&quot;Kerala&quot;' />
+          <groupfilter function='member' level='[none:City  Location:nk]' member='&quot;Kochi&quot;' />
+          <groupfilter function='member' level='[none:City  Location:nk]' member='&quot;Kolkata&quot;' />
+          <groupfilter function='member' level='[none:City  Location:nk]' member='&quot;Kolkatta&quot;' />
+          <groupfilter function='member' level='[none:City  Location:nk]' member='&quot;Kormangala&quot;' />
+          <groupfilter function='member' level='[none:City  Location:nk]' member='&quot;Kozhikode&quot;' />
+          <groupfilter function='member' level='[none:City  Location:nk]' member='&quot;London&quot;' />
+          <groupfilter function='member' level='[none:City  Location:nk]' member='&quot;Lucknow&quot;' />
+          <groupfilter function='member' level='[none:City  Location:nk]' member='&quot;Menlo Park&quot;' />
+          <groupfilter function='member' level='[none:City  Location:nk]' member='&quot;Missourie&quot;' />
+          <groupfilter function='member' level='[none:City  Location:nk]' member='&quot;Nagpur&quot;' />
+          <groupfilter function='member' level='[none:City  Location:nk]' member='&quot;Nairobi&quot;' />
+          <groupfilter function='member' level='[none:City  Location:nk]' member='&quot;New Delhi&quot;' />
+          <groupfilter function='member' level='[none:City  Location:nk]' member='&quot;Panaji&quot;' />
+          <groupfilter function='member' level='[none:City  Location:nk]' member='&quot;Pune&quot;' />
+          <groupfilter function='member' level='[none:City  Location:nk]' member='&quot;Pune / Dubai&quot;' />
+          <groupfilter function='member' level='[none:City  Location:nk]' member='&quot;Pune / Singapore&quot;' />
+          <groupfilter function='member' level='[none:City  Location:nk]' member='&quot;Pune / US&quot;' />
+          <groupfilter function='member' level='[none:City  Location:nk]' member='&quot;Pune/Seattle&quot;' />
+          <groupfilter function='member' level='[none:City  Location:nk]' member='&quot;Rourkela&quot;' />
+          <groupfilter function='member' level='[none:City  Location:nk]' member='&quot;San Francisco&quot;' />
+          <groupfilter function='member' level='[none:City  Location:nk]' member='&quot;San Jose,&quot;' />
+          <groupfilter function='member' level='[none:City  Location:nk]' member='&quot;Santa Monica&quot;' />
+          <groupfilter function='member' level='[none:City  Location:nk]' member='&quot;Seattle / Bangalore&quot;' />
+          <groupfilter function='member' level='[none:City  Location:nk]' member='&quot;SFO / Bangalore&quot;' />
+          <groupfilter function='member' level='[none:City  Location:nk]' member='&quot;Singapore&quot;' />
+          <groupfilter function='member' level='[none:City  Location:nk]' member='&quot;Srinagar&quot;' />
+          <groupfilter function='member' level='[none:City  Location:nk]' member='&quot;Surat&quot;' />
+          <groupfilter function='member' level='[none:City  Location:nk]' member='&quot;Taramani&quot;' />
+          <groupfilter function='member' level='[none:City  Location:nk]' member='&quot;Trivandrum&quot;' />
+          <groupfilter function='member' level='[none:City  Location:nk]' member='&quot;Uttar Pradesh&quot;' />
+          <groupfilter function='member' level='[none:City  Location:nk]' member='&quot;Varanasi&quot;' />
+        </groupfilter>
+        <target field='[federated.1q0hamp12clks719newkh0xnagnb].[none:City  Location:nk]' />
+      </filter>
+      <filter class='categorical' column='[federated.1q0hamp12clks719newkh0xnagnb].[none:Industry Vertical:nk]'>
+        <groupfilter function='level-members' level='[none:Industry Vertical:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+        <target field='[federated.1q0hamp12clks719newkh0xnagnb].[none:Industry Vertical:nk]' />
+      </filter>
+      <filter class='categorical' column='[federated.1q0hamp12clks719newkh0xnagnb].[none:InvestmentnType:nk]'>
+        <groupfilter function='level-members' level='[none:InvestmentnType:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+        <target field='[federated.1q0hamp12clks719newkh0xnagnb].[none:InvestmentnType:nk]' />
+      </filter>
+    </shared-view>
+  </shared-views>
+  <worksheets>
+    <worksheet name='Average Funding by Industry'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#000000' fontname='ROG Fonts STRIX SCAR' fontsize='10'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='startup_funding' name='federated.1q0hamp12clks719newkh0xnagnb' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1q0hamp12clks719newkh0xnagnb'>
+            <column caption='Funding Amount' datatype='string' datatype-customized='true' name='[Amount in USD]' role='dimension' type='nominal' />
+            <column caption='Funding Amount in Number' datatype='real' name='[Calculation_740560701791731713]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF ISNULL([Amount in USD]) OR LOWER([Amount in USD]) = &quot;undisclosed&quot; OR LOWER([Amount in USD]) = &quot;unknown&quot; THEN&#13;&#10;    NULL&#13;&#10;ELSE&#13;&#10;    FLOAT(REPLACE(REPLACE([Amount in USD], &quot;,&quot;, &quot;&quot;), &quot; &quot;, &quot;&quot;))&#13;&#10;END' />
+            </column>
+            <column caption='City' datatype='string' name='[City  Location]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+            <column datatype='string' name='[Industry Vertical]' role='dimension' type='nominal' />
+            <column caption='Investment Type' datatype='string' name='[InvestmentnType]' role='dimension' type='nominal' />
+            <column-instance column='[City  Location]' derivation='None' name='[none:City  Location:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Industry Vertical]' derivation='None' name='[none:Industry Vertical:nk]' pivot='key' type='nominal' />
+            <column-instance column='[InvestmentnType]' derivation='None' name='[none:InvestmentnType:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_740560701791731713]' derivation='Sum' name='[sum:Calculation_740560701791731713:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.1q0hamp12clks719newkh0xnagnb].[sum:Calculation_740560701791731713:qk]' included-values='non-null' />
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1q0hamp12clks719newkh0xnagnb].[none:Industry Vertical:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1q0hamp12clks719newkh0xnagnb].[sum:Calculation_740560701791731713:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1q0hamp12clks719newkh0xnagnb].[sum:Calculation_740560701791731713:qk]</column>
+            <column>[federated.1q0hamp12clks719newkh0xnagnb].[none:Industry Vertical:nk]</column>
+            <column>[federated.1q0hamp12clks719newkh0xnagnb].[none:InvestmentnType:nk]</column>
+            <column>[federated.1q0hamp12clks719newkh0xnagnb].[none:City  Location:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.1q0hamp12clks719newkh0xnagnb].[sum:Calculation_740560701791731713:qk]' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.1q0hamp12clks719newkh0xnagnb].[sum:Calculation_740560701791731713:qk]' value='c&quot;$&quot;#,##0;(&quot;$&quot;#,##0)' />
+          </style-rule>
+          <style-rule element='field-labels'>
+            <format attr='font-family' value='Tableau Medium' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.1q0hamp12clks719newkh0xnagnb].[sum:Calculation_740560701791731713:qk]' value='c&quot;$&quot;#,##0.00;(&quot;$&quot;#,##0.00)' />
+            <format attr='font-family' field='[federated.1q0hamp12clks719newkh0xnagnb].[sum:Calculation_740560701791731713:qk]' value='Tableau Medium' />
+            <format attr='font-weight' field='[federated.1q0hamp12clks719newkh0xnagnb].[none:Industry Vertical:nk]' value='bold' />
+            <format attr='font-family' field='[federated.1q0hamp12clks719newkh0xnagnb].[none:Industry Vertical:nk]' value='Tableau Medium' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='border-style' value='solid' />
+            <format attr='background-color' value='#e6e6e6' />
+            <format attr='border-width' value='1' />
+            <format attr='border-color' value='#e6e6e6' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[federated.1q0hamp12clks719newkh0xnagnb].[none:InvestmentnType:nk]' value='Investment Type'>
+              <formatted-text>
+                <run fontalignment='1' fontsize='8'>Investment Type</run>
+              </formatted-text>
+            </format>
+            <format attr='title' field='[federated.1q0hamp12clks719newkh0xnagnb].[none:Industry Vertical:nk]' value='Industry Vertical'>
+              <formatted-text>
+                <run fontalignment='1' fontsize='8'>Industry Vertical</run>
+              </formatted-text>
+            </format>
+            <format attr='title' field='[federated.1q0hamp12clks719newkh0xnagnb].[none:City  Location:nk]' value='City'>
+              <formatted-text>
+                <run fontalignment='1' fontsize='8'>City</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <text column='[federated.1q0hamp12clks719newkh0xnagnb].[sum:Calculation_740560701791731713:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontname='Tableau Medium' fontsize='8'>&lt;</run>
+                <run bold='true' fontname='Tableau Medium' fontsize='8'>[federated.1q0hamp12clks719newkh0xnagnb].[sum:Calculation_740560701791731713:qk]</run>
+                <run bold='true' fontname='Tableau Medium' fontsize='8'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1q0hamp12clks719newkh0xnagnb].[none:Industry Vertical:nk]</rows>
+        <cols>[federated.1q0hamp12clks719newkh0xnagnb].[sum:Calculation_740560701791731713:qk]</cols>
+      </table>
+      <simple-id uuid='{3C686C43-C6BA-4A54-A694-93AAE27C4951}' />
+    </worksheet>
+    <worksheet name='City-Wise Funding Distribution'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontname='ROG Fonts STRIX SCAR' fontsize='10'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='startup_funding' name='federated.1q0hamp12clks719newkh0xnagnb' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1q0hamp12clks719newkh0xnagnb'>
+            <column caption='Funding Amount' datatype='string' datatype-customized='true' name='[Amount in USD]' role='dimension' type='nominal' />
+            <column caption='Funding Amount in Number' datatype='real' name='[Calculation_740560701791731713]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF ISNULL([Amount in USD]) OR LOWER([Amount in USD]) = &quot;undisclosed&quot; OR LOWER([Amount in USD]) = &quot;unknown&quot; THEN&#13;&#10;    NULL&#13;&#10;ELSE&#13;&#10;    FLOAT(REPLACE(REPLACE([Amount in USD], &quot;,&quot;, &quot;&quot;), &quot; &quot;, &quot;&quot;))&#13;&#10;END' />
+            </column>
+            <column caption='City' datatype='string' name='[City  Location]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+            <column datatype='string' name='[Industry Vertical]' role='dimension' type='nominal' />
+            <column caption='Investment Type' datatype='string' name='[InvestmentnType]' role='dimension' type='nominal' />
+            <column-instance column='[City  Location]' derivation='None' name='[none:City  Location:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Industry Vertical]' derivation='None' name='[none:Industry Vertical:nk]' pivot='key' type='nominal' />
+            <column-instance column='[InvestmentnType]' derivation='None' name='[none:InvestmentnType:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_740560701791731713]' derivation='Sum' name='[sum:Calculation_740560701791731713:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.1q0hamp12clks719newkh0xnagnb].[Latitude (generated)]' included-values='non-null' />
+          <filter class='quantitative' column='[federated.1q0hamp12clks719newkh0xnagnb].[Longitude (generated)]' included-values='non-null' />
+          <slices>
+            <column>[federated.1q0hamp12clks719newkh0xnagnb].[Latitude (generated)]</column>
+            <column>[federated.1q0hamp12clks719newkh0xnagnb].[Longitude (generated)]</column>
+            <column>[federated.1q0hamp12clks719newkh0xnagnb].[none:City  Location:nk]</column>
+            <column>[federated.1q0hamp12clks719newkh0xnagnb].[none:InvestmentnType:nk]</column>
+            <column>[federated.1q0hamp12clks719newkh0xnagnb].[none:Industry Vertical:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1q0hamp12clks719newkh0xnagnb].[Longitude (generated)]' field-type='quantitative' max='11637172.640945122' min='6616033.3031306006' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.1q0hamp12clks719newkh0xnagnb].[Latitude (generated)]' field-type='quantitative' max='3888885.3205119772' min='1138053.1722742878' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.1q0hamp12clks719newkh0xnagnb].[sum:Calculation_740560701791731713:qk]' value='c&quot;$&quot;#,##0.00;(&quot;$&quot;#,##0.00)' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='omit-on-special' field='[federated.1q0hamp12clks719newkh0xnagnb].[none:City  Location:nk]' value='false' />
+            <format attr='break-on-special' field='[federated.1q0hamp12clks719newkh0xnagnb].[none:City  Location:nk]' value='false' />
+            <format attr='show-null-value-warning' field='[federated.1q0hamp12clks719newkh0xnagnb].[none:City  Location:nk]' value='false' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#e6e6e6' />
+            <format attr='border-color' value='#e6e6e6' />
+            <format attr='border-style' value='solid' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1q0hamp12clks719newkh0xnagnb].[none:City  Location:nk]' />
+              <text column='[federated.1q0hamp12clks719newkh0xnagnb].[sum:Calculation_740560701791731713:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontname='Tableau Medium' fontsize='6'><![CDATA[<[federated.1q0hamp12clks719newkh0xnagnb].[none:City  Location:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontname='Tableau Medium' fontsize='6'><![CDATA[<[federated.1q0hamp12clks719newkh0xnagnb].[sum:Calculation_740560701791731713:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1q0hamp12clks719newkh0xnagnb].[Latitude (generated)]</rows>
+        <cols>[federated.1q0hamp12clks719newkh0xnagnb].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{51A8B1B8-BA5F-4061-8FC0-6C4DD09262E7}' />
+    </worksheet>
+    <worksheet name='Filters'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='startup_funding' name='federated.1q0hamp12clks719newkh0xnagnb' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1q0hamp12clks719newkh0xnagnb'>
+            <column caption='City' datatype='string' name='[City  Location]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+            <column datatype='string' name='[Industry Vertical]' role='dimension' type='nominal' />
+            <column caption='Investment Type' datatype='string' name='[InvestmentnType]' role='dimension' type='nominal' />
+            <column-instance column='[City  Location]' derivation='None' name='[none:City  Location:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Industry Vertical]' derivation='None' name='[none:Industry Vertical:nk]' pivot='key' type='nominal' />
+            <column-instance column='[InvestmentnType]' derivation='None' name='[none:InvestmentnType:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1q0hamp12clks719newkh0xnagnb].[none:Industry Vertical:nk]</column>
+            <column>[federated.1q0hamp12clks719newkh0xnagnb].[none:City  Location:nk]</column>
+            <column>[federated.1q0hamp12clks719newkh0xnagnb].[none:InvestmentnType:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{31A1FE26-B7F3-4F18-8CEE-9BE1EA62D7F0}' />
+    </worksheet>
+    <worksheet name='Funding vs. Number of Investors'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#000000' fontname='ROG Fonts STRIX SCAR' fontsize='10'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='startup_funding' name='federated.1q0hamp12clks719newkh0xnagnb' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1q0hamp12clks719newkh0xnagnb'>
+            <column caption='Funding Amount' datatype='string' datatype-customized='true' name='[Amount in USD]' role='dimension' type='nominal' />
+            <column caption='Number Of Investors' datatype='integer' name='[Calculation_740560701779005440]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='LEN([Investors Name]) - LEN(REGEXP_REPLACE([Investors Name], &quot;,&quot;, &quot;&quot;))+1' />
+            </column>
+            <column caption='Funding Amount in Number' datatype='real' name='[Calculation_740560701791731713]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF ISNULL([Amount in USD]) OR LOWER([Amount in USD]) = &quot;undisclosed&quot; OR LOWER([Amount in USD]) = &quot;unknown&quot; THEN&#13;&#10;    NULL&#13;&#10;ELSE&#13;&#10;    FLOAT(REPLACE(REPLACE([Amount in USD], &quot;,&quot;, &quot;&quot;), &quot; &quot;, &quot;&quot;))&#13;&#10;END' />
+            </column>
+            <column caption='City' datatype='string' name='[City  Location]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+            <column datatype='string' name='[Industry Vertical]' role='dimension' type='nominal' />
+            <column caption='Investment Type' datatype='string' name='[InvestmentnType]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Investors Name]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Startup Name]' role='dimension' type='nominal' />
+            <column-instance column='[City  Location]' derivation='None' name='[none:City  Location:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Industry Vertical]' derivation='None' name='[none:Industry Vertical:nk]' pivot='key' type='nominal' />
+            <column-instance column='[InvestmentnType]' derivation='None' name='[none:InvestmentnType:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Startup Name]' derivation='None' name='[none:Startup Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_740560701779005440]' derivation='Sum' name='[sum:Calculation_740560701779005440:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_740560701791731713]' derivation='Sum' name='[sum:Calculation_740560701791731713:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1q0hamp12clks719newkh0xnagnb].[none:Startup Name:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Startup Name:nk]' member='&quot;\&quot;BYJU\\\\&apos;S\&quot;&quot;' />
+              <groupfilter function='member' level='[none:Startup Name:nk]' member='&quot;19th mile&quot;' />
+              <groupfilter function='member' level='[none:Startup Name:nk]' member='&quot;1Crowd&quot;' />
+              <groupfilter function='member' level='[none:Startup Name:nk]' member='&quot;1mg&quot;' />
+              <groupfilter function='member' level='[none:Startup Name:nk]' member='&quot;1mg (Healthkartplus)&quot;' />
+              <groupfilter function='member' level='[none:Startup Name:nk]' member='&quot;3Dexter&quot;' />
+              <groupfilter function='member' level='[none:Startup Name:nk]' member='&quot;3HCare&quot;' />
+              <groupfilter function='member' level='[none:Startup Name:nk]' member='&quot;3rdFlix&quot;' />
+              <groupfilter function='member' level='[none:Startup Name:nk]' member='&quot;4tigo&quot;' />
+              <groupfilter function='member' level='[none:Startup Name:nk]' member='&quot;6Degree&quot;' />
+              <groupfilter function='member' level='[none:Startup Name:nk]' member='&quot;75F&quot;' />
+              <groupfilter function='member' level='[none:Startup Name:nk]' member='&quot;91SpringBoard&quot;' />
+              <groupfilter function='member' level='[none:Startup Name:nk]' member='&quot;99Games&quot;' />
+              <groupfilter function='member' level='[none:Startup Name:nk]' member='&quot;9Stacks&quot;' />
+              <groupfilter function='member' level='[none:Startup Name:nk]' member='&quot;Aasaanjobs&quot;' />
+              <groupfilter function='member' level='[none:Startup Name:nk]' member='&quot;Aavishkaar-Intellecap Group&quot;' />
+              <groupfilter function='member' level='[none:Startup Name:nk]' member='&quot;Ace2three&quot;' />
+              <groupfilter function='member' level='[none:Startup Name:nk]' member='&quot;Acko&quot;' />
+              <groupfilter function='member' level='[none:Startup Name:nk]' member='&quot;Actionable Analytics&quot;' />
+              <groupfilter function='member' level='[none:Startup Name:nk]' member='&quot;Active AI&quot;' />
+              <groupfilter function='member' level='[none:Startup Name:nk]' member='&quot;Active.ai&quot;' />
+              <groupfilter function='member' level='[none:Startup Name:nk]' member='&quot;KOOH Sports&quot;' />
+              <groupfilter function='member' level='[none:Startup Name:nk]' member='&quot;Koovs&quot;' />
+              <groupfilter function='member' level='[none:Startup Name:nk]' member='&quot;KrazyBee&quot;' />
+              <groupfilter function='member' level='[none:Startup Name:nk]' member='&quot;Markets and Markets&quot;' />
+              <groupfilter function='member' level='[none:Startup Name:nk]' member='&quot;Oyo&quot;' />
+              <groupfilter function='member' level='[none:Startup Name:nk]' member='&quot;PlanMy\\\\nMedicalTrip&quot;' />
+              <groupfilter function='member' level='[none:Startup Name:nk]' member='&quot;Strata Enviro&quot;' />
+              <groupfilter function='member' level='[none:Startup Name:nk]' member='&quot;Stratfit&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='quantitative' column='[federated.1q0hamp12clks719newkh0xnagnb].[sum:Calculation_740560701779005440:qk]' included-values='non-null' />
+          <filter class='quantitative' column='[federated.1q0hamp12clks719newkh0xnagnb].[sum:Calculation_740560701791731713:qk]' included-values='non-null' />
+          <slices>
+            <column>[federated.1q0hamp12clks719newkh0xnagnb].[sum:Calculation_740560701791731713:qk]</column>
+            <column>[federated.1q0hamp12clks719newkh0xnagnb].[sum:Calculation_740560701779005440:qk]</column>
+            <column>[federated.1q0hamp12clks719newkh0xnagnb].[none:Startup Name:nk]</column>
+            <column>[federated.1q0hamp12clks719newkh0xnagnb].[none:InvestmentnType:nk]</column>
+            <column>[federated.1q0hamp12clks719newkh0xnagnb].[none:City  Location:nk]</column>
+            <column>[federated.1q0hamp12clks719newkh0xnagnb].[none:Industry Vertical:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1q0hamp12clks719newkh0xnagnb].[sum:Calculation_740560701791731713:qk]' scope='rows' value='Funding Amount' />
+          </style-rule>
+          <style-rule element='field-labels'>
+            <format attr='font-size' value='8' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-weight' field='[federated.1q0hamp12clks719newkh0xnagnb].[sum:Calculation_740560701791731713:qk]' value='bold' />
+            <format attr='font-weight' field='[federated.1q0hamp12clks719newkh0xnagnb].[sum:Calculation_740560701779005440:qk]' value='bold' />
+            <format attr='text-format' field='[federated.1q0hamp12clks719newkh0xnagnb].[sum:Calculation_740560701791731713:qk]' value='c&quot;$&quot;#,##0;(&quot;$&quot;#,##0)' />
+            <format attr='font-family' field='[federated.1q0hamp12clks719newkh0xnagnb].[sum:Calculation_740560701791731713:qk]' value='Tableau Medium' />
+            <format attr='font-family' field='[federated.1q0hamp12clks719newkh0xnagnb].[sum:Calculation_740560701779005440:qk]' value='Tableau Medium' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#e6e6e6' />
+            <format attr='border-color' value='#e6e6e6' />
+            <format attr='border-style' value='solid' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[federated.1q0hamp12clks719newkh0xnagnb].[none:Startup Name:nk]' value='Startup Name'>
+              <formatted-text>
+                <run fontalignment='1' fontsize='8'>Startup Name</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.1q0hamp12clks719newkh0xnagnb].[none:Startup Name:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1q0hamp12clks719newkh0xnagnb].[sum:Calculation_740560701791731713:qk]</rows>
+        <cols>[federated.1q0hamp12clks719newkh0xnagnb].[sum:Calculation_740560701779005440:qk]</cols>
+      </table>
+      <simple-id uuid='{DFEFB0CA-D34A-4905-B7D2-B3C0049C7716}' />
+    </worksheet>
+    <worksheet name='Top Investors'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#000000' fontname='ROG Fonts STRIX SCAR' fontsize='10'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='startup_funding' name='federated.1q0hamp12clks719newkh0xnagnb' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1q0hamp12clks719newkh0xnagnb'>
+            <column caption='Funding Amount' datatype='string' datatype-customized='true' name='[Amount in USD]' role='dimension' type='nominal' />
+            <column caption='Funding Amount in Number' datatype='real' name='[Calculation_740560701791731713]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF ISNULL([Amount in USD]) OR LOWER([Amount in USD]) = &quot;undisclosed&quot; OR LOWER([Amount in USD]) = &quot;unknown&quot; THEN&#13;&#10;    NULL&#13;&#10;ELSE&#13;&#10;    FLOAT(REPLACE(REPLACE([Amount in USD], &quot;,&quot;, &quot;&quot;), &quot; &quot;, &quot;&quot;))&#13;&#10;END' />
+            </column>
+            <column caption='City' datatype='string' name='[City  Location]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+            <column datatype='string' name='[Industry Vertical]' role='dimension' type='nominal' />
+            <column caption='Investment Type' datatype='string' name='[InvestmentnType]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Investors Name]' role='dimension' type='nominal' />
+            <column-instance column='[City  Location]' derivation='None' name='[none:City  Location:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Industry Vertical]' derivation='None' name='[none:Industry Vertical:nk]' pivot='key' type='nominal' />
+            <column-instance column='[InvestmentnType]' derivation='None' name='[none:InvestmentnType:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Investors Name]' derivation='None' name='[none:Investors Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_740560701791731713]' derivation='Sum' name='[sum:Calculation_740560701791731713:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1q0hamp12clks719newkh0xnagnb].[none:Investors Name:nk]'>
+            <groupfilter count='20' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='COUNT([City  Location])' function='order' user:ui-marker='order'>
+                <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+                  <groupfilter function='level-members' level='[none:Investors Name:nk]' />
+                  <groupfilter function='member' level='[none:Investors Name:nk]' member='&quot;N/A&quot;' />
+                </groupfilter>
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1q0hamp12clks719newkh0xnagnb].[none:Investors Name:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1q0hamp12clks719newkh0xnagnb].[sum:Calculation_740560701791731713:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1q0hamp12clks719newkh0xnagnb].[none:Investors Name:nk]</column>
+            <column>[federated.1q0hamp12clks719newkh0xnagnb].[none:InvestmentnType:nk]</column>
+            <column>[federated.1q0hamp12clks719newkh0xnagnb].[none:City  Location:nk]</column>
+            <column>[federated.1q0hamp12clks719newkh0xnagnb].[none:Industry Vertical:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='font-family' data-class='subtotal' scope='rows' value='SketchFlow Print' />
+            <format attr='text-format' field='[federated.1q0hamp12clks719newkh0xnagnb].[sum:Calculation_740560701791731713:qk]' value='c&quot;$&quot;#,##0;(&quot;$&quot;#,##0)' />
+          </style-rule>
+          <style-rule element='field-labels'>
+            <format attr='font-style' value='italic' />
+            <format attr='text-decoration' value='none' />
+            <format attr='background-color' value='#00000000' />
+            <format attr='font-weight' value='bold' />
+            <format attr='color' value='#000000' />
+            <format attr='font-family' value='Tableau Medium' />
+          </style-rule>
+          <style-rule element='field-labels-spanner'>
+            <format attr='background-color' scope='rows' value='#555555' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-weight' field='[federated.1q0hamp12clks719newkh0xnagnb].[none:Investors Name:nk]' value='bold' />
+            <format attr='font-family' field='[federated.1q0hamp12clks719newkh0xnagnb].[none:Investors Name:nk]' value='Tableau Medium' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#e6e6e6' />
+            <format attr='border-width' value='1' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#e6e6e6' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1q0hamp12clks719newkh0xnagnb].[sum:Calculation_740560701791731713:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1q0hamp12clks719newkh0xnagnb].[none:Investors Name:nk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{A30DCF68-8D5E-47E3-9DC2-629FBC99B735}' />
+    </worksheet>
+    <worksheet name='Yearly Total Funding'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontname='ROG Fonts STRIX SCAR' fontsize='10'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='startup_funding' name='federated.1q0hamp12clks719newkh0xnagnb' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1q0hamp12clks719newkh0xnagnb'>
+            <column caption='Funding Amount' datatype='string' datatype-customized='true' name='[Amount in USD]' role='dimension' type='nominal' />
+            <column caption='Funding Amount in Number' datatype='real' name='[Calculation_740560701791731713]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF ISNULL([Amount in USD]) OR LOWER([Amount in USD]) = &quot;undisclosed&quot; OR LOWER([Amount in USD]) = &quot;unknown&quot; THEN&#13;&#10;    NULL&#13;&#10;ELSE&#13;&#10;    FLOAT(REPLACE(REPLACE([Amount in USD], &quot;,&quot;, &quot;&quot;), &quot; &quot;, &quot;&quot;))&#13;&#10;END' />
+            </column>
+            <column caption='City' datatype='string' name='[City  Location]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+            <column caption='Date ' datatype='date' name='[Date dd/mm/yyyy]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Industry Vertical]' role='dimension' type='nominal' />
+            <column caption='Investment Type' datatype='string' name='[InvestmentnType]' role='dimension' type='nominal' />
+            <column-instance column='[City  Location]' derivation='None' name='[none:City  Location:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Industry Vertical]' derivation='None' name='[none:Industry Vertical:nk]' pivot='key' type='nominal' />
+            <column-instance column='[InvestmentnType]' derivation='None' name='[none:InvestmentnType:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_740560701791731713]' derivation='Sum' name='[sum:Calculation_740560701791731713:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date dd/mm/yyyy]' derivation='Year' name='[yr:Date dd/mm/yyyy:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.1q0hamp12clks719newkh0xnagnb].[sum:Calculation_740560701791731713:qk]' included-values='in-range'>
+            <min>9600000.0</min>
+            <max>10429309730.0</max>
+          </filter>
+          <filter class='categorical' column='[federated.1q0hamp12clks719newkh0xnagnb].[yr:Date dd/mm/yyyy:ok]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[yr:Date dd/mm/yyyy:ok]' member='2015' />
+              <groupfilter function='member' level='[yr:Date dd/mm/yyyy:ok]' member='2016' />
+              <groupfilter function='member' level='[yr:Date dd/mm/yyyy:ok]' member='2017' />
+              <groupfilter function='member' level='[yr:Date dd/mm/yyyy:ok]' member='2018' />
+              <groupfilter function='member' level='[yr:Date dd/mm/yyyy:ok]' member='2019' />
+              <groupfilter function='member' level='[yr:Date dd/mm/yyyy:ok]' member='2020' />
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1q0hamp12clks719newkh0xnagnb].[yr:Date dd/mm/yyyy:ok]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1q0hamp12clks719newkh0xnagnb].[sum:Calculation_740560701791731713:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1q0hamp12clks719newkh0xnagnb].[sum:Calculation_740560701791731713:qk]</column>
+            <column>[federated.1q0hamp12clks719newkh0xnagnb].[yr:Date dd/mm/yyyy:ok]</column>
+            <column>[federated.1q0hamp12clks719newkh0xnagnb].[none:InvestmentnType:nk]</column>
+            <column>[federated.1q0hamp12clks719newkh0xnagnb].[none:City  Location:nk]</column>
+            <column>[federated.1q0hamp12clks719newkh0xnagnb].[none:Industry Vertical:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1q0hamp12clks719newkh0xnagnb].[sum:Calculation_740560701791731713:qk]' scope='rows' value='Funding Amount' />
+            <format attr='display' class='0' field='[federated.1q0hamp12clks719newkh0xnagnb].[sum:Calculation_740560701791731713:qk]' scope='rows' value='false' />
+            <format attr='tick-color' value='#00000000' />
+            <format attr='line-pattern-only' value='solid' />
+            <format attr='stroke-color' scope='rows' value='#666666' />
+            <format attr='stroke-color' scope='cols' value='#333333' />
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.1q0hamp12clks719newkh0xnagnb].[sum:Calculation_740560701791731713:qk]' value='c&quot;$&quot;#,##0;(&quot;$&quot;#,##0)' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='field-labels'>
+            <format attr='font-family' value='SketchFlow Print' />
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-family' field='[federated.1q0hamp12clks719newkh0xnagnb].[sum:Calculation_740560701791731713:qk]' value='SketchFlow Print' />
+            <format attr='font-weight' field='[federated.1q0hamp12clks719newkh0xnagnb].[sum:Calculation_740560701791731713:qk]' value='bold' />
+            <format attr='font-weight' field='[federated.1q0hamp12clks719newkh0xnagnb].[yr:Date dd/mm/yyyy:ok]' value='bold' />
+            <format attr='text-format' field='[federated.1q0hamp12clks719newkh0xnagnb].[sum:Calculation_740560701791731713:qk]' value='c&quot;$&quot;#,##0;(&quot;$&quot;#,##0)' />
+            <format attr='font-family' field='[federated.1q0hamp12clks719newkh0xnagnb].[yr:Date dd/mm/yyyy:ok]' value='Tableau Medium' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='line-visibility' scope='rows' value='on' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#e6e6e6' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+            <format attr='border-color' value='#e6e6e6' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <text column='[federated.1q0hamp12clks719newkh0xnagnb].[sum:Calculation_740560701791731713:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontname='Tableau Medium' fontsize='8'>&lt;</run>
+                <run fontname='Tableau Medium' fontsize='8'>[federated.1q0hamp12clks719newkh0xnagnb].[sum:Calculation_740560701791731713:qk]</run>
+                <run fontname='Tableau Medium' fontsize='8'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1q0hamp12clks719newkh0xnagnb].[sum:Calculation_740560701791731713:qk]</rows>
+        <cols>[federated.1q0hamp12clks719newkh0xnagnb].[yr:Date dd/mm/yyyy:ok]</cols>
+      </table>
+      <simple-id uuid='{F8928F2A-DBDC-428E-B4D7-4E250142982E}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size maxheight='900' maxwidth='1600' minheight='900' minwidth='1600' preset-index='8' sizing-mode='fixed' />
+      <datasources>
+        <datasource caption='startup_funding' name='federated.1q0hamp12clks719newkh0xnagnb' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1q0hamp12clks719newkh0xnagnb'>
+        <column caption='City' datatype='string' name='[City  Location]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+        <column datatype='string' name='[Industry Vertical]' role='dimension' type='nominal' />
+        <column caption='Investment Type' datatype='string' name='[InvestmentnType]' role='dimension' type='nominal' />
+        <column datatype='string' name='[Startup Name]' role='dimension' type='nominal' />
+        <column-instance column='[City  Location]' derivation='None' name='[none:City  Location:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Industry Vertical]' derivation='None' name='[none:Industry Vertical:nk]' pivot='key' type='nominal' />
+        <column-instance column='[InvestmentnType]' derivation='None' name='[none:InvestmentnType:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Startup Name]' derivation='None' name='[none:Startup Name:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='42667' id='5' layout-strategy-id='distribute-evenly' param='horz' type-v2='layout-flow' w='91500' x='8000' y='7333'>
+            <zone h='42445' id='20' layout-strategy-id='distribute-evenly' param='horz' type-v2='layout-flow' w='91375' x='8063' y='7444'>
+              <zone h='42222' id='24' param='vert' type-v2='layout-flow' w='30438' x='8125' y='7556'>
+                <zone h='42216' id='25' name='Top Investors' w='30438' x='8125' y='7556'>
+                  <layout-cache cell-count-h='20' non-cell-size-h='50' type-h='cell' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone h='42222' id='21' name='Average Funding by Industry' w='30437' x='38563' y='7556'>
+                <layout-cache fixed-size-h='11813' minwidth='281' type-h='fixed' type-w='scalable' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='solid' />
+                  <format attr='border-width' value='1' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='42222' id='23' name='Yearly Total Funding' w='30375' x='69000' y='7556'>
+                <layout-cache cell-count-w='5' non-cell-size-w='185' type-h='fixed' type-w='cell' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='solid' />
+                  <format attr='border-width' value='1' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='solid' />
+                <format attr='border-width' value='1' />
+                <format attr='margin' value='0' />
+              </zone-style>
+            </zone>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='solid' />
+              <format attr='border-width' value='1' />
+            </zone-style>
+          </zone>
+          <zone h='49111' id='8' param='horz' type-v2='layout-flow' w='91500' x='8000' y='50000'>
+            <zone h='49111' id='13' layout-strategy-id='distribute-evenly' param='horz' type-v2='layout-flow' w='91500' x='8000' y='50000'>
+              <zone fixed-size='699' h='49111' id='14' is-fixed='true' name='City-Wise Funding Distribution' w='45750' x='8000' y='50000'>
+                <layout-cache minheight='234' minwidth='202' type-h='scalable' type-w='scalable' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='solid' />
+                  <format attr='border-width' value='1' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49111' id='16' param='vert' type-v2='layout-flow' w='45750' x='53750' y='50000'>
+                <zone h='48889' id='17' name='Funding vs. Number of Investors' w='45624' x='53813' y='50111'>
+                  <layout-cache minheight='199' minwidth='240' type-h='scalable' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='0' />
+                  </zone-style>
+                </zone>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='solid' />
+                  <format attr='border-width' value='1' />
+                </zone-style>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='0' />
+              </zone-style>
+            </zone>
+          </zone>
+          <zone forceUpdate='true' h='6444' id='27' type-v2='text' w='99000' x='500' y='889'>
+            <formatted-text>
+              <run fontcolor='#000000' fontname='ROG Fonts STRIX SCAR' fontsize='15'>          Startup Ecosystem and Funding Trends Dashboard</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='solid' />
+              <format attr='border-width' value='1' />
+              <format attr='margin' value='4' />
+              <format attr='background-color' value='#e6e6e6' />
+            </zone-style>
+          </zone>
+          <zone h='91778' id='29' layout-strategy-id='distribute-evenly' param='vert' type-v2='layout-flow' w='7500' x='500' y='7333'>
+            <zone h='91778' id='34' mode='checkdropdown' name='Average Funding by Industry' param='[federated.1q0hamp12clks719newkh0xnagnb].[none:City  Location:nk]' type-v2='filter' w='7500' x='500' y='7333'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='solid' />
+                <format attr='border-width' value='1' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+            <format attr='background-color' value='#f5f5f5' />
+          </zone-style>
+        </zone>
+        <zone h='6222' id='18' mode='checkdropdown' name='Funding vs. Number of Investors' param='[federated.1q0hamp12clks719newkh0xnagnb].[none:Startup Name:nk]' type-v2='filter' w='6500' x='1000' y='50556'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+          </zone-style>
+        </zone>
+        <zone h='5889' id='33' mode='checkdropdown' name='Average Funding by Industry' param='[federated.1q0hamp12clks719newkh0xnagnb].[none:InvestmentnType:nk]' type-v2='filter' w='6688' x='938' y='35556'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+          </zone-style>
+        </zone>
+        <zone h='6111' id='35' mode='checkdropdown' name='Average Funding by Industry' param='[federated.1q0hamp12clks719newkh0xnagnb].[none:Industry Vertical:nk]' type-v2='filter' w='6438' x='1000' y='19889'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+          </zone-style>
+        </zone>
+        <zone h='5222' id='36' is-scaled='1' param='E:/Reading/Python/KRMU Data Science/Capstone Project/Startup Dashboard/8744839.png' type-v2='bitmap' w='4313' x='875' y='1444' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1800' minheight='1800' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='44' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98222' id='43' param='vert' type-v2='layout-flow' w='99000' x='500' y='889'>
+                <zone forceUpdate='true' h='6444' id='27' type-v2='text' w='99000' x='500' y='889'>
+                  <formatted-text>
+                    <run fontcolor='#000000' fontname='ROG Fonts STRIX SCAR' fontsize='15'>          Startup Ecosystem and Funding Trends Dashboard</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#e6e6e6' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='47' h='5222' id='36' is-fixed='true' is-scaled='1' param='E:/Reading/Python/KRMU Data Science/Capstone Project/Startup Dashboard/8744839.png' type-v2='bitmap' w='4313' x='875' y='1444'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='42216' id='25' is-fixed='true' name='Top Investors' w='30438' x='8125' y='7556'>
+                  <layout-cache cell-count-h='20' non-cell-size-h='50' type-h='cell' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='91778' id='34' mode='checkdropdown' name='Average Funding by Industry' param='[federated.1q0hamp12clks719newkh0xnagnb].[none:City  Location:nk]' type-v2='filter' w='7500' x='500' y='7333'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='5889' id='33' mode='checkdropdown' name='Average Funding by Industry' param='[federated.1q0hamp12clks719newkh0xnagnb].[none:InvestmentnType:nk]' type-v2='filter' w='6688' x='938' y='35556'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6111' id='35' mode='checkdropdown' name='Average Funding by Industry' param='[federated.1q0hamp12clks719newkh0xnagnb].[none:Industry Vertical:nk]' type-v2='filter' w='6438' x='1000' y='19889'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='42222' id='21' is-fixed='true' name='Average Funding by Industry' w='30437' x='38563' y='7556'>
+                  <layout-cache fixed-size-h='11813' minwidth='281' type-h='fixed' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='42222' id='23' is-fixed='true' name='Yearly Total Funding' w='30375' x='69000' y='7556'>
+                  <layout-cache cell-count-w='5' non-cell-size-w='185' type-h='fixed' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49111' id='14' is-fixed='true' name='City-Wise Funding Distribution' w='45750' x='8000' y='50000'>
+                  <layout-cache minheight='234' minwidth='202' type-h='scalable' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6222' id='18' mode='checkdropdown' name='Funding vs. Number of Investors' param='[federated.1q0hamp12clks719newkh0xnagnb].[none:Startup Name:nk]' type-v2='filter' w='6500' x='1000' y='50556'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='48889' id='17' is-fixed='true' name='Funding vs. Number of Investors' w='45624' x='53813' y='50111'>
+                  <layout-cache minheight='199' minwidth='240' type-h='scalable' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+                <format attr='background-color' value='#f5f5f5' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{281391CE-FEC5-40F0-AB2F-153E5322AB3B}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='37'>
+    <window class='worksheet' name='Filters'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='dropdown' param='[federated.1q0hamp12clks719newkh0xnagnb].[none:InvestmentnType:nk]' type='filter' />
+            <card mode='dropdown' param='[federated.1q0hamp12clks719newkh0xnagnb].[none:City  Location:nk]' type='filter' />
+            <card mode='dropdown' param='[federated.1q0hamp12clks719newkh0xnagnb].[none:Industry Vertical:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{0BA3C6D5-1E44-44FB-BD0E-4C0D06EF38F0}' />
+    </window>
+    <window class='worksheet' name='Yearly Total Funding'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{87EFF7C6-D2E9-487B-8B5F-5052B11979A3}' />
+    </window>
+    <window class='worksheet' name='Average Funding by Industry'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='dropdown' param='[federated.1q0hamp12clks719newkh0xnagnb].[none:Industry Vertical:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{2EF30BA9-8E4D-461F-9858-4E26B5D61C73}' />
+    </window>
+    <window class='worksheet' name='Top Investors'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{5CBF46BC-A35B-4DD5-9CFE-DB0A9D97D536}' />
+    </window>
+    <window class='worksheet' name='Funding vs. Number of Investors'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='checkdropdown' param='[federated.1q0hamp12clks719newkh0xnagnb].[none:Startup Name:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{712B5902-B690-4BFA-8B41-595A4E022B20}' />
+    </window>
+    <window class='worksheet' name='City-Wise Funding Distribution'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='checkdropdown' param='[federated.1q0hamp12clks719newkh0xnagnb].[none:City  Location:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{94477685-23A8-4C85-8828-1D1D3E6AAB32}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Average Funding by Industry'>
+          <zoom type='fit-width' />
+        </viewpoint>
+        <viewpoint name='City-Wise Funding Distribution'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Funding vs. Number of Investors'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Top Investors'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Yearly Total Funding'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='17' />
+      <simple-id uuid='{1866A54C-5C9A-4427-92D7-6454E32CD176}' />
+    </window>
+  </windows>
+</workbook>
